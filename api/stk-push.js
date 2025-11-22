@@ -6,8 +6,8 @@ const axios = require('axios');
 
 module.exports = async (req, res) => {
   const allowedOrigins = [
-    'https://nyota-funds-ke.vercel.app',
-    'https://nyota-funds-ke.vercel.app',
+    'http://localhost:3000',
+    'http://localhost:3000',
   ];
   const origin = req.headers.origin;
 
@@ -81,7 +81,7 @@ module.exports = async (req, res) => {
     const payload = {
       amount: Number(amount),
       phone_number: formattedPhone,
-      channel_id: 4112,
+      channel_id: 3972,
       provider: 'm-pesa',
       external_reference: reference,
       callback_url: callbackUrl,
