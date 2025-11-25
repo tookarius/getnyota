@@ -81,7 +81,7 @@ export default function ActivateAccount() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           phoneNumber: phone,
-          amount: 250,
+          amount: 500,
           reference: clientReference,
         }),
       });
@@ -138,7 +138,7 @@ export default function ActivateAccount() {
                 <div className="flex gap-3">
                   <AlertCircle className="w-6 h-6 text-amber-600 flex-shrink-0" />
                   <div>
-                    <p className="font-bold text-kenya-black">Activation Fee: KSh 250</p>
+                    <p className="font-bold text-kenya-black">Activation Fee: KSh 500</p>
                     <p className="text-sm text-gray-700">
                       Pay a one-time fee to activate your Nyota Youth Fund account.
                     </p>
@@ -234,7 +234,7 @@ export default function ActivateAccount() {
                   <p className="text-sm text-gray-600">
                     <strong>Reference ID:</strong> {clientReference}<br />
                     <strong>Activated On:</strong> {new Date().toLocaleString('en-KE')}<br />
-                    <strong>Payment:</strong> KSh 250 (Confirmed)
+                    <strong>Payment:</strong> KSh 500 (Confirmed)
                   </p>
                 </div>
               </div>
