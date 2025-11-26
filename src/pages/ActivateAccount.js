@@ -211,7 +211,7 @@ export default function ActivateAccount() {
                   <Check className="w-16 h-16 text-white" />
                 </div>
                 <h2 className="text-3xl font-black text-kenya-black mb-4">
-                  Payment Successful!
+                  Payment Successful!!
                 </h2>
                 <p className="text-2xl font-bold text-kenya-green mb-4">
                   Account Activated
