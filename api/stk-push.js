@@ -33,7 +33,6 @@ module.exports = async (req, res) => {
   const { phoneNumber, amount, reference } = req.body;
   console.log(`[${new Date().toISOString()}] STK Push requested - Phone: ${phoneNumber}, Amount: ${amount}, Client Reference: ${reference}`);
 
-  // Validate inputs
   if (!phoneNumber || !amount || !reference) {
     console.log('Missing required fields:', { phoneNumber, amount, reference });
     return res.status(400).json({ success: false, error: 'Missing phoneNumber, amount, or reference' });
